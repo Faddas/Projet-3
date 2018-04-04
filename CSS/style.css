@@ -1,0 +1,275 @@
+body,html{
+margin:0;
+padding:0;
+font-family: 'Roboto', sans-serif;
+height: 100%;
+max-height: 100%;
+}
+
+header {
+height: 110px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+background-image: -webkit-gradient(linear,left top, right top,from(#002699), to(#3366ff));
+background-image: linear-gradient(to right,#002699, #3366ff);
+color: #fff;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+a{
+color:#fff;
+text-decoration: none;
+}
+
+h3{
+text-align: center;
+}
+
+h1{
+text-align: center;
+
+}
+
+#wrapper{
+margin: 0 auto;
+max-width: 900px
+}
+
+#slider{
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+padding: 30px;
+}
+
+#slider img{
+max-height: 300px;
+}
+
+.prev,.next{
+cursor: pointer;
+height:10%;
+}
+
+.prev{
+position: absolute;
+top:35%;
+left:0;
+}
+
+.next{
+position:absolute;
+right:0;
+top:35%;
+}
+
+#velib-map {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+#velib-map {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+
+#map {
+height: 300px;
+margin: 20px;
+border: solid 2px #3366ff;
+}
+}
+
+@media screen and (min-width:1200px) {
+#map {
+height: 600px;
+margin: 20px;
+border: solid 2px #3366ff;
+-webkit-box-flex: 3;
+    -ms-flex: 3;
+        flex: 3;
+}
+}
+
+@media screen and (max-width: 700px) {
+#slider {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+text-align: center;
+}
+}
+@media screen and (max-width: 380px) {
+#slider img {
+max-width: 150px;
+}
+}
+/* Aside : station & reservation */
+
+aside {
+-webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.station,
+.booking {
+height: 320px;
+max-width: 500px;
+margin: 20px;
+color: white;
+background-color: #3366ff;
+border-radius: 10px;
+-webkit-box-shadow:2px 2px 2px gray,
+2px 2px 2px black;
+        box-shadow:2px 2px 2px gray,
+2px 2px 2px black;
+overflow: hidden;
+display: block;
+}
+
+#velib-map h3 {
+text-transform: uppercase;
+text-align: center;
+background-color: #002699;
+padding: 10px;
+margin-top: 0;
+}
+
+.station p {
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 0; padding-top: 0;
+margin: 10px;
+}
+
+
+/* reservation buttons */
+
+#velib-map button, .cancel {
+font-weight: bold;
+font-size: 15px;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.station button {
+display: none;
+margin: 0 auto;
+margin-top: 40px;
+}
+
+.station button,
+.booking button:last-child,
+.cancel {
+border: solid 2px #aa2b35;
+background-color: #CC333F;
+color: white;
+}
+
+#erase {
+color: #556270;
+background-color: white;
+border: solid 2px #45505b;
+}
+
+.cancel {
+padding: 3px 10px;
+margin: 8px;
+}
+
+.booking-button {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+.booking {
+display: none;
+}
+
+footer {
+height: 140px;
+background-color: grey;
+border-top: solid 5px black;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+footer p {
+color: black;
+font-weight: bold;
+font-size: 25px;
+text-align: center;
+margin: 5px;
+}
+
+footer .timer-text {
+padding: 2px 10px;
+border-radius: 15px;
+color: white;;
+}
+
+#canvas-sign {
+border: solid 2px #45505b;
+background-color: white;
+height: 150px;
+width: 99%;
+}
+
+@media screen and (max-width: 570px) {
+footer p {
+font-size: 18px;
+}

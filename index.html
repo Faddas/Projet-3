@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link rel="stylesheet" href="CSS/style.css" type="text/css" media="screen"/>
+	<title>Reservations de Vélo'v a Lyon</title>
+</head>
+<body>
+	<header>
+    <h1>Bienvenue sur le site de location de Vélib' de la ville de Lyon</h1>
+</header>
+	<h3>Pour savoir comment fonctionne une reservation laissez-vous guide par le diaporama  ci-dessous :</h3>
+	<section id="wrapper">
+		<div id="slider">
+			<img src= "#"  id="slides" alt="">
+		</div>
+		<img src="img/arrow-left.png"  class="prev" alt="">
+		<img src="img/arrow-right.png"  class="next" alt="">
+	</section>
+	<section id="velib-map">
+		<div id="map"></div>
+	        <aside>
+	            <div class="station">
+	                <h3>Détails de la station</h3>
+	                <p class="station-name">Sélectionner une station</p>
+	                <p class="station-address"></p>
+	                <p class="available-bikes"></p>
+	                <button class="booking-button">Réserver</button>
+	            </div>
+	            <div class="booking">
+	                <h3>Signer pour réserver</h3>
+	                <canvas id="canvas-sign"></canvas>
+	                <div class="booking-button">
+	                    <button id="erase">Effacer</button>
+	                    <button id="submit">Valider</button>
+	                </div>
+	            </div>
+	        </aside>
+	    </section>
+		<footer>
+	   <p>
+		   <span class="footer-text"></span>
+		   <br/>
+		   <span class="timer-text"></span>
+		   <br/>
+		   <button class="cancel">Annuler</button>
+	   </p>
+   </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBGAkhqT5MDLXNbw_J5dlwEYFjNdtepSM"></script>
+<script type="text/javascript" src="JS/markerclusterer.js"></script>
+<script type="text/javascript" src="JS/ajax.js"></script>
+<script type="text/javascript" src="JS/carrousel.js"></script>
+<script type="text/javascript" src="JS/google-map.js"></script>
+<script type="text/javascript" src="JS/canvas.js"></script>
+</html>
